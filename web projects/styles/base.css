@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.headTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D9488;
+    padding: 2rem;
+    font-size: large;
+}
+
+/* nav bar modifications*/
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E3A8A;
+    height: 60px;
+    list-style: none;
+    gap: 9rem;
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    color: beige;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+nav a:hover {
+    background-color:#FBBF24;
+     color: whitesmoke;        /* text changes to whitesmoke */
+  border-radius: 10px;
+}
+
+/* about me section*/
+
+.card {
+    display: flex;
+    justify-content:left;
+    flex-direction: column;
+    align-items:center;
+    width: 50%;
+   margin: 0%;
+   padding: 10px;
+   border: 1px solid #0D9488;
+   border-radius: 8px;
+   padding: 1.5rem;
+   margin: 1rem 0;
+
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.card img {
+    justify-content:end;
+}
+
+.card h1 {
+    text-align: center;
+    background-color: #1E3A8A;
+    width: 105%;
+    margin: 0;
+    color: aliceblue;
+    padding: 10px;
+    
+}
+
+.about_layout {
+    display: flex;
+    align-items: flex-start left;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 10px;
+}
+
+
+.selfPicture img {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.country h2 {
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+    text-decoration-color: #0D9488;
+
+}
+
+
+

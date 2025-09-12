@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for main content */
+.content {
+  display: flex;
+  flex-direction: column; /* stack nav, main, aside vertically */
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: center; /* center items horizontally */
+  align-items: center;     /* center items vertically */
+  background-color: burlywood;
+  height: 60px;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* spacing between items */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  background-color: aquamarine;
+  height: 80px;
+
+  /* Align text to top-right */
+  display: flex;
+  justify-content: flex-end; /* horizontal: right */
+  align-items: flex-start;   /* vertical: top */
+  padding: 0.5rem;
+}
+.middle {
+  display: flex;     /* puts children side by side */
+  gap: 1px;         /* space between main & aside */
+  padding: 1px;
+}
+
+/* Main content */
+.main {
+  background-color: aliceblue;
+  width: 50%;
+  height: 700px; /* taller so you see it */
+  padding: 1rem;
+}
+
+/* Aside */
+.aside {
+  background-color: lightcoral;
+  width: 50%;
+  height: 700px;
+  padding: 1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: aquamarine;
+  height: 80px;
+
+  /* Align text to top-right */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 1px;
+}
