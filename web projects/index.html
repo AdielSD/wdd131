@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 – Dynamic Web Fundamentals – Sephora Diaz</title>
-    <meta name="description" content=" This site demonstrates HTML, CSS, and JavaScript skills with a personal layout, navigation, images, and dynamic footer updates.""
+    <meta name="description" content=" This site demonstrates HTML, CSS, and JavaScript skills with a personal layout, navigation, images, and dynamic footer updates.">
     <meta name="author" content="Sephora Diaz">
     <link rel="stylesheet" href = "styles/base.css">
+    <script src="getdates.js" defer></script>
 </head>
 <body>
 <header> 
@@ -33,7 +34,7 @@
 </header>
 <main>
     
-   
+   <div class="cards">
 
     <section class="card">
         <h1> About me </h1>
@@ -48,16 +49,18 @@
          This page is part of my journey to practice HTML, CSS, and JavaScript as I continue building a strong foundation in web development.</p>
 
 
-         <div class="selfPicture"><img src = "images/WhatsApp Image 2025-09-11 at 11.12.01 AM.jpeg" alt="Sephora's Picture" height="230px" width="450px"></div>
+         <div class="selfPicture"><img src = "images/WhatsApp Image 2025-09-11 at 11.12.01 AM.jpeg" alt="Sephora's Picture" height="180px" width="300px"></div>
         </div>
 
          
         
 
-         <div class="country">
-            <h2>Lima, Peru</h2>
+<h2>Lima, Peru</h2>
+        <div class="country">
+            
 
             <div class="flag"><img src="images/bandera peruana.jpeg" alt="bandera del Perú" height="200px" width="350px"></div>
+          
 
             
 
@@ -75,16 +78,36 @@ The Nazca Lines, massive geoglyphs carved into the desert, can only be fully see
 
          </div>
     </section>
+
     <section class="card2">
+        <h1>Web Dev Resources</h1>
+
+        <div class="links">
+
+            <ul>
+                <li><a href="W3schools">W3schools</a></li>
+                <li><a href="Css tricks">Css tricks</a></li>
+                <li><a href="image holder">image Placeholder</a></li>
+                <li><a href="youtube"> Youtube Channel</a></li>
+                <li><a href="Other projects"> Other projects</a></li>
+                <li><a href="socials">Instagram</a></li>
+            
+            </ul>
+        </div>
 
     </section>
+
+   </div>
+
+    
 
 </main>
 <footer>
     <p>
-    &copy; <span id="currentyear">2025</span> &#127802 Sephora Diaz &#127802 | Peru
+    &copy; <span id="currentyear">2025</span> &#127802 Sephora Krystell Diaz Altamirano &#127802 | Peru
   </p>
   <p id="lastModified"></p>
+
 </footer>    
 </body>
 </html>
