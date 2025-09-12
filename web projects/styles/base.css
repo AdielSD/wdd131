@@ -2,13 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+
+body {
+    background-color: #fff0f3;
 }
 
 .headTitle{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0D9488;
+    background-color: #ffccd5;
     padding: 2rem;
     font-size: large;
 }
@@ -19,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1E3A8A;
+    background-color: #a4133c;
     height: 60px;
     list-style: none;
     gap: 9rem;
@@ -41,8 +46,8 @@ nav {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 nav a:hover {
-    background-color:#FBBF24;
-     color: whitesmoke;        /* text changes to whitesmoke */
+    background-color: #FBBF24;
+     color: whitesmoke;       
   border-radius: 10px;
 }
 
@@ -56,10 +61,12 @@ nav a:hover {
     width: 60%;
    margin: 0%;
    padding: 10px;
-   border: 1px solid #0D9488;
+   border: 1px solid #F472B6;
    border-radius: 8px;
    padding: 1.5rem;
    margin: 1rem 0;
+   background-color: #ffccd5;
+
 
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -71,8 +78,8 @@ nav a:hover {
 
 .card h1 {
     text-align: center;
-    background-color: #1E3A8A;
-    width: 107%;
+    background-color: #ff4d6d;
+    width: 100%;
     margin: 0;
     color: aliceblue;
     padding: 10px;
@@ -102,7 +109,7 @@ nav a:hover {
 
 }
 
-/* country section */
+ /* country section */
 
 .country {
 display: flex ;
@@ -124,7 +131,7 @@ padding: 10px;
     width: 40%;
    margin: 0%;
    padding: 10px;
-   border: 1px solid #0D9488;
+   border: 1px solid #F472B6;
    border-radius: 8px;
    padding: 1.5rem;
    margin: 1rem 0;
@@ -149,14 +156,16 @@ padding: 10px;
     justify-content: flex-start;
     gap: 3rem;
     font-size: large;
+    text-decoration-color: #590d22;
+    background-color: #ffccd5;
 
     
 }
 
 .card2 h1 {
-    background-color: #1E3A8A;
+    background-color: #ff4d6d;
     color: aliceblue;
-    width: 110%;
+    width: 100%;
     text-align: center;
     padding: 10px;
     margin: 0;
@@ -164,9 +173,13 @@ padding: 10px;
 }
 
 footer {
-    background-color: #0D9488;
+    background-color: #a4133c;
     height: 100px;
     text-align: center;
     padding: 30px;
     font-size: larger;
+}
+
+footer p {
+    color: aliceblue;
 }
