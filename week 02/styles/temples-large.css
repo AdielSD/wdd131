@@ -1,0 +1,39 @@
+/* temples-large.css - for larger screens */
+
+@media (min-width: 768px) {
+  /* HEADER LAYOUT */
+  header {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    align-items: center;
+    padding: 1rem;
+  }
+
+  /* NAVBAR horizontally */
+  .navbar ul {
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 2.5rem;
+    background: none; 
+  }
+
+  .hamburger {
+    display: none; 
+  }
+
+  .navbar a {
+    padding: 2rem 2.5rem;
+  }
+
+  /* MAIN GRID */
+  main {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    max-width: 1500px;
+    margin: auto;
+    padding: 2rem;
+  }
+}

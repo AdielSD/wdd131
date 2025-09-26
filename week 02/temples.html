@@ -6,6 +6,11 @@
     <title>WDD 131 | W02 Assignment: Picture Album </title>
     <meta name="author" content="Sephora Diaz">
     <meta name="description" content="This assignment applies the concepts presented in the learning activities to a picture album page that is responsive in small and larger views. This page will utilize a 'hamburger' menu and respond to user requests.">
+    <!--Font style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
     <script src="scripts/temples.js" defer></script>
@@ -16,6 +21,8 @@
        <h1 class="nav-title">Temple Album</h1>
 
         <nav class="navbar">
+
+            <button class="hamburger" id="menuButton">☰</button>
 
              
             
@@ -31,31 +38,53 @@
 
     </header>
 
+    <h2 class="main-title">Home</h2>
+
     <main>
 
-        <h2 class="main-title">Home</h2>
-
-        <img src="images/lima-peru-los-olivos-temple.jpg" title="The Later day's Saint temple in Los Olivos, Lima" width="450px" height="300px">
+        
+        <div class="item">
+            <img src="images/lima-peru-los-olivos-temple.jpg" title="The Later day's Saint temple in Los Olivos, Lima" >
         <p>Los Olivos, Lima, Perú</p> 
-        <img src="images/lima-peru-los-olivos-temple.jpg" title="The Later day's Saint temple in Los Olivos, Lima" width="450px" height="300px">
+         </div>
+
+         <div class="item">
+            <img src="images/lima-peru-los-olivos-temple.jpg" title="The Later day's Saint temple in Los Olivos, Lima" >
+        <p>Los Olivos, Lima, Perú</p>
+         </div>
+        <div class="item">
+            <img src="images/lima-peru-los-olivos-temple.jpg" title="The Later day's Saint temple in Los Olivos, Lima" >
         <p>Los Olivos, Lima, Perú</p> 
-        <img src="images/lima-peru-los-olivos-temple.jpg" title="The Later day's Saint temple in Los Olivos, Lima" width="450px" height="300px">
-        <p>Los Olivos, Lima, Perú</p> 
+        </div>
+        
+        
 
 
-        <img src="images/temple-la-molina.jpg" title="The Later day's Saint temple in La Molina, Lima" width="450px" height="300px">
+        <div class="item">
+            <img src="images/temple-la-molina.jpg" title="The Later day's Saint temple in La Molina, Lima" >
         <p>La Molina, Lima, Perú</p>
-        <img src="images/temple-la-molina.jpg" title="The Later day's Saint temple in La Molina, Lima" width="450px" height="300px">
+        </div>
+        <div class="item">
+            <img src="images/temple-la-molina.jpg" title="The Later day's Saint temple in La Molina, Lima" >
         <p>La Molina, Lima, Perú</p>
-        <img src="images/temple-la-molina.jpg" title="The Later day's Saint temple in La Molina, Lima" width="450px" height="300px">
+        </div>
+        <div class="item">
+            <img src="images/temple-la-molina.jpg" title="The Later day's Saint temple in La Molina, Lima" >
         <p>La Molina, Lima, Perú</p>
+        </div>
 
-        <img src="images/arequipa_peru_temple.webp" title="The Later day's Saint temple in Arequipa" width="450px" height="300px">
+        <div class="item">
+            <img src="images/arequipa_peru_temple.webp" title="The Later day's Saint temple in Arequipa" >
         <p>Arequipa Perú</p>
-        <img src="images/arequipa_peru_temple.webp" title="The Later day's Saint temple in Arequipa" width="450px" height="300px">
+        </div>
+        <div class="item">
+            <img src="images/arequipa_peru_temple.webp" title="The Later day's Saint temple in Arequipa" >
         <p>Arequipa Perú</p>
-        <img src="images/arequipa_peru_temple.webp" title="The Later day's Saint temple in Arequipa" width="450px" height="300px">
+        </div>
+        <div class="item">
+            <img src="images/arequipa_peru_temple.webp" title="The Later day's Saint temple in Arequipa" >
         <p>Arequipa Perú</p>
+        </div>
 
     </main>
     <footer>

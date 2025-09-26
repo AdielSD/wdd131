@@ -1,49 +1,115 @@
+/* temples.css - mobile first (default) */
+
 * {
-    margin: 0%;
-    padding: 0%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navbar ul{ display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100px;
-    list-style: none;
-    gap: 2.5rem;
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
 }
 
-nav {
-    width: 100%;
-    padding: 0%;
-    background-color: blueviolet;
-    font-size: large;
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: blueviolet;
+  padding: 1rem;
+}
+
+.nav-title {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem;
+  color: azure;
+  font-weight: 800;
+  font-style: oblique;
+  font-size: xx-large;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* NAVBAR - hidden by default */
+.navbar ul {
+  display: none; /* hide on small screens */
+  flex-direction: column;
+  list-style: none;
+  background: blueviolet;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar.active ul {
+  display: flex; /* show when hamburger clicked */
 }
 
 .navbar a {
-    text-decoration: none;
-    padding: 2rem 2.5rem;
-    color: azure;
-    font-size: 20px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-nav a:hover {
-    background-color: rgb(193, 130, 218);
-    color: whitesmoke;
-    border-radius: 5px;
-}
-
-.nav-title{
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0.5rem;
-    color: azure;
-}
-
-header {
-  display: grid;
-  grid-template-columns: auto 1fr; 
-  align-items: center;
-  background-color: blueviolet;
+  text-decoration: none;
   padding: 1rem;
+  color: azure;
+  font-size: 20px;
+  font-family:"Roboto", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: rgb(193, 130, 218);
+  color: whitesmoke;
+  border-radius: 5px;
+}
+
+/* HAMBURGER */
+.hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background: none;
+}
+
+/* PAGE TITLES */
+.main-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+/* CONTENT GRID */
+main {
+  display: grid;
+  grid-template-columns: 1fr; /* single column on mobile */
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.item {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 5px;
+  color: azure;
+  font-size: large;
+  font-family:sans-serif;
 }
