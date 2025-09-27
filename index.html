@@ -1,1 +1,96 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | W02 Assignment: Picture Album </title>
+    <meta name="author" content="Sephora Diaz">
+    <meta name="description" content="This assignment applies the concepts presented in the learning activities to a picture album page that is responsive in small and larger views. This page will utilize a 'hamburger' menu and respond to user requests.">
+    <!--Font style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        
+       <h1 class="nav-title">Temple Album</h1>
+
+        <nav class="navbar">
+
+            <button class="hamburger" id="menuButton">☰</button>
+
+             
+            
+            <ul>
+                
+                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="#" title="Old">Old</a></li>
+                <li><a href="#" title="New">New</a></li>
+                <li><a href="#" title="Large">Large</a></li>
+                <li><a href="#" title="Small">Small</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <h2 class="main-title">Home</h2>
+
+    <main>
+
+        
+        <div class="item">
+            <img src="images/lima-peru-los-olivos-temple.jpg" title="The Later day's Saint temple in Los Olivos, Lima" >
+        <p>Los Olivos, Lima, Perú</p> 
+         </div>
+
+         <div class="item">
+            <img src="images/lima-peru-los-olivos-temple.jpg" title="The Later day's Saint temple in Los Olivos, Lima" >
+        <p>Los Olivos, Lima, Perú</p>
+         </div>
+        <div class="item">
+            <img src="images/lima-peru-los-olivos-temple.jpg" title="The Later day's Saint temple in Los Olivos, Lima" >
+        <p>Los Olivos, Lima, Perú</p> 
+        </div>
+        
+        
+
+
+        <div class="item">
+            <img src="images/temple-la-molina.jpg" title="The Later day's Saint temple in La Molina, Lima" >
+        <p>La Molina, Lima, Perú</p>
+        </div>
+        <div class="item">
+            <img src="images/temple-la-molina.jpg" title="The Later day's Saint temple in La Molina, Lima" >
+        <p>La Molina, Lima, Perú</p>
+        </div>
+        <div class="item">
+            <img src="images/temple-la-molina.jpg" title="The Later day's Saint temple in La Molina, Lima" >
+        <p>La Molina, Lima, Perú</p>
+        </div>
+
+        <div class="item">
+            <img src="images/arequipa_peru_temple.webp" title="The Later day's Saint temple in Arequipa" >
+        <p>Arequipa Perú</p>
+        </div>
+        <div class="item">
+            <img src="images/arequipa_peru_temple.webp" title="The Later day's Saint temple in Arequipa" >
+        <p>Arequipa Perú</p>
+        </div>
+        <div class="item">
+            <img src="images/arequipa_peru_temple.webp" title="The Later day's Saint temple in Arequipa" >
+        <p>Arequipa Perú</p>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &#127802 Sephora Krystell Diaz Altamirano &#127802 | Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
