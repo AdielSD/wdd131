@@ -1,0 +1,266 @@
+
+
+* { box-sizing: border-box;
+    margin: 0;
+    padding: 0; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f6f7fb;
+  color: #111;
+  line-height: 1.4;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: blueviolet;
+  padding: 1rem;
+  
+}
+
+.nav-title {
+  color: azure;
+  font-weight: 800;
+  font-style: oblique;
+  font-size: 1.6rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+  transition: opacity 0.3s ease;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.hamburger{
+
+  font-size: 1.75rem;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background: none;
+}
+
+.axis {
+   font-size: 1.75rem;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background: none;
+}
+
+.axis {
+  display: none;
+}
+
+.navbar.active .hamburger {
+  display: none;
+}
+
+.navbar.active .axis {
+  display: block;
+}
+
+
+.navbar ul {
+  display: none; /* hide on small screens */
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  background: blueviolet;
+  width: 100%;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+}
+
+.navbar.active ul {
+  display: flex;
+
+}
+
+.navbar li{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  margin:auto;
+
+}
+
+
+
+.navbar a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 0.75rem 0;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover applies to each link individually */
+.navbar a:hover {
+  background-color: rgb(193, 130, 218);
+  color: white;
+}
+
+/* PAGE TITLES */
+.main-title {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1.25rem;
+}
+
+/* MAIN: single column on mobile */
+main {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* TEMPLE LIST (cards stack vertically centered) */
+.temple-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* TEMPLE CARD: mobile stacking layout */
+.temple-card {
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(20,20,40,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+/* image container */
+.temple-img {
+  width: 90%;
+  height: calc(90vw * 1.5); /* portrait aspect */
+  max-width: 400px;
+  max-height: 600px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* ensure images fill the frame */
+.temple-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+
+/* fade-in when loaded */
+.temple-img img.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* details */
+.temple-details {
+  width: 100%;
+  text-align: left;
+}
+.temple-details h3 { font-size: 1.05rem; margin-bottom: .25rem; }
+.temple-details p { font-size: .95rem; margin-bottom: .25rem; color: #444; }
+
+/* footer */
+footer {
+  background-color: blueviolet;
+  color: azure;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+ 
+/* Make hamburger menu items stacked and centered */
+.navbar ul {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  background: blueviolet;
+  text-decoration: none;
+}
+
+.navbar.active ul {
+  display: flex;
+  padding: 1rem 0;
+}
+
+/* Smooth hide/show for title */
+.nav-title {
+  transition: opacity 0.3s ease;
+}
+
+/* Temple cards */
+.temple-card {
+  background: #f6f4f7;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.temple-card:hover {
+  transform: scale(1.02);
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.temple-card figcaption {
+  padding: 1rem;
+}
+
+/* Mobile menu layout fix */
+.navbar.active ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* centers list vertically */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50vh; /* full screen */
+  width: 100%;
+  background: blueviolet;
+  gap: 1.5rem;
+  padding-top: 5rem; /* push items below the ✕ */
+  z-index: 100;
+}
+
+/* Position the ✕ button above the menu list */
+.navbar.active .axis {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  z-index: 101;
+}

@@ -1,0 +1,94 @@
+/* ========== Reset ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+/* ========== Header ========== */
+header {
+  background-color: #003049;
+  height: 80px;
+}
+
+h1 {
+  background-color: #780000;
+  color: #fdf0d5;
+  padding: 12px;
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========== Main Section ========== */
+main {
+  min-height: 100vh;
+  padding-bottom: 4rem;
+}
+
+/* ========== Kioto Image ========== */
+.Kioto {
+  width: 100%;
+  overflow: hidden;
+}
+
+.Kioto img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* ========== Info Boxes ========== */
+.info-data, .info-weather {
+  background-color: #fdf0d5;
+  padding: 20px;
+  margin: 1.5rem auto;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  gap: 5px;
+  box-decoration-break: slice;
+  border-color: #c1121f #669bbc;
+  border-style:inset;
+
+  
+}
+
+/* Headings with icons */
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon1 {
+  width: 60px;
+  height: 60px;
+}
+
+.icon2 {
+  width: 75px;
+  height: 75px;
+}
+
+/* ========== Footer ========== */
+footer {
+  background-color: #780000;
+  color: #fdf0d5;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px;
+}

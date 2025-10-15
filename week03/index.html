@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W03 Assignment: Country Page | Sephora Diaz </title>
+    <meta name="author" content="Sephora Diaz">
+    <meta name="description" content=" The subject of the page is a country or place where you live, have visited, or wish to visit.">
+    
+    <link rel="preload" as="image" href="images/templo-kioto-small.webp" />
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 1000px)">
+    
+    
+    <script src="scripts/places.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Kioto ⛩ Japan</h1>
+    </header>
+
+    <main>
+            <div class="Kioto">
+                <picture>
+                <source media="(min-width:1000px)" srcset="images/templo-kioto-large.webp">
+                <source media="(min-width:700px)" srcset="images/templo-kioto-medium.webp">
+                <img 
+                src="images/templo-kioto-small.webp" 
+                alt="kioto background" 
+                height="400px"
+                loading="eager"
+                decoding="async"
+                ;>
+            </picture>
+
+            </div>
+
+ 
+
+       
+        <div class="info-data">
+            <img 
+            src="images/4288598_analysis_analytics_chart_data_pie_icon.svg" 
+            alt="A data chart" 
+            class="icon1"
+            loading="lazy"
+            decoding="async"
+            >
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong>827.9 sq km</li>
+                <li><strong>Population:</strong>1.46 million</li>
+                <li><strong>Country:</strong>Japan</li>
+                <li><strong>Languages:</strong>Japanese</li>
+                <li><strong>Currency:</strong> Japanese yen</li>
+                <li><strong>Time Zone:</strong>(GMT+9)</li>
+                <li><strong>Calling Code:</strong>+ 81 + 75</li>
+            </ul>
+        </div>
+
+        <div class="info-weather">
+            <img 
+            src="images/1530385_weather_clouds_rain_storm_thunder_icon.svg" 
+            alt="A cloud, thunder and the sun" 
+            class="icon2"
+            loading="lazy"
+            decoding="async"
+            >
+            <h2>Weather</h2>
+            <ul>
+                <li><strong>Temperature:</strong>22°C</li>
+                <li><strong>Conditions:</strong>Cloudy</li>
+                <li><strong>Wind:</strong>6km/h</li>
+                <li><strong>Wind chill:</strong>19°C</li>
+            </ul>
+        </div>
+
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &#127802 Sephora Krystell Diaz Altamirano &#127802 | Peru</p>
+        <p id="lastModified"> </p>
+
+
+    </footer>
+    
+</body>
+</html>
